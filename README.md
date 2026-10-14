@@ -6,7 +6,7 @@
 > 许可证：CC BY 4.0
 
 ## 报告列表
-- **MedXpert工具链实测报告.md**：首份中立评测（20/21 PASS，含口径漂移修正）
+- **MedXpert工具链实测报告.md**：首份实测（20/21 PASS，含口径漂移修正）——**关联方评测**（被评方 stevenzhao07 与评测号同属三号生态，详见 CONFLICT_OF_INTEREST_DISCLOSURE.md）
 
 ## 每份报告必含
 1. 中立声明（评测方/被评测方/利益隔离）
