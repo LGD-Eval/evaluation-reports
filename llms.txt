@@ -1,0 +1,16 @@
+# evaluation-reports — LGD-Eval 评测报告库（Published Reports）
+> LLM-friendly entry. / 面向 AI 的入口。
+
+## What (是什么)
+Published evaluation reports with evidence-grade conclusions. / 已发布的评测报告（带证据等级结论）。
+
+## Report structure (报告结构)
+Scope & exclusions · Method & judge cards · Domain-level risk of bias · Findings with interpretation levels (Verified/Strong/Moderate/Limited/Preliminary) · Evidence appendix · Standards mapping · Responses & corrections. / 范围与排除·方法学与判官卡·域级偏倚·分级发现·证据附录·标准映射·回应更正。
+
+## Key files (关键文件)
+- README.md — report index / 报告索引
+- TEST_REPORT_FULL.md — full real-run test report of our own five repos / 本机构自测全量报告
+- MedXpert工具链实测报告.md — live evaluation of the MedXpert toolchain / 产品号实测
+- INDEX — leaderboard & aggregate index / 榜单与聚合索引（随主动评测上线）
+
+*Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
