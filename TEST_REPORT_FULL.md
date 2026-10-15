@@ -33,7 +33,7 @@
 | R3 AI 代理（LLM） | AGENTS.md（每仓根目录） | 读一文件了解仓库 → PROMPTING.md **PART B 自主参与指令**（可直接注入上下文）→ 认领 good first issue → 提交带证据 PR（Assisted-by/Generated-by 标注）→ 改动数据须重算 SHA-256 | ✅ 为 AI 参与工程化：AGENTS × 5、钩子全放、质量门禁可执行 |
 | R4 领域负责人 | CONTRIBUTORS.md 制度 | 认领行业/模块块 → 招募自己的团队 → 标准共同署名 → 哈希锚定记录 | ✅ 制度已写入；CODEOWNERS 预留 |
 | R5 被评测对象（产品方） | evaluation-reports README | 提交评测 → 独立对抗性实跑 → 报告发布 → 光荣榜（≥90 上榜 / ≥95 置顶）→ 广告位合作 | ✅ 流程完整；MedXpert 首份实测已示范（21 模块实跑、20 通过、公开自检硬伤） |
-| R6 推荐者/生态伙伴 | ECOSYSTEM_REFERRAL.md | 推荐评测（10% 分润）→ 广告位（15%）→ 会员（20%）→ 推荐者等级 R1-R3 → **AI 同权** → SHA-256 结算锚定 | ✅ 生态链互荐收益机制完整、双向可审计 |
+| R6 推荐者/生态伙伴 | ECOSYSTEM_REFERRAL.md | 推荐评测（10% 生态激励）→ 广告位（15%）→ 会员（20%）→ 推荐者等级 R1-R3 → **AI 同权** → SHA-256 结算锚定 | ✅ 生态链互荐收益机制完整、双向可审计 |
 | R7 监管/合规/审计方 | evaluation-evidence README | 存证说明 → hash-manifest.txt → SHA-256 + 时间戳 → 区块链锚定规划（Phase 1） | ✅ 证据链骨架在位；上链为 Phase 1 待办 |
 
 **走查结论：7/7 角色均有清晰可走的入口路径，无死胡同。** 每个角色的下一步动作（认领/提交/推荐/上榜/存证）都有明确文档承接。
