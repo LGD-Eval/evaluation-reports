@@ -11,7 +11,7 @@
 
 | 项 | 判 | 证据摘要 |
 |---|---|---|
-| A1 commit 邮箱 | 🔴 **FAIL** | 5 仓 357 commits 的 author/committer 全部为 `zhaoxinghua06@gmail.com`（每仓 60-79 commits，复测 per_page=100 全覆盖）。**处置方案待批**（见下文） |
+| A1 commit 邮箱 | 🔴 **FAIL** | 5 仓 357 commits 的 author/committer 曾全部为历史私人邮箱（每仓 60-79 commits，复测 per_page=100 全覆盖）。**处置方案待批**（见下文，获批后已重写为 noreply） |
 | A2 互关网络 | ✅ PASS（披露型） | 互关保持（4/4 follows），COI 披露已上线明示三号关系，不再半遮半掩 |
 | A3 MedXpert 报告 | ✅ PASS（披露型） | evaluation-reports README 已标注"关联方评测"，指向 COI 披露 |
 | A4 COI 披露 | ✅ PASS | `CONFLICT_OF_INTEREST_DISCLOSURE.md` 上线 5 仓（2763B，回读 5/5）；主仓 README 头部插入披露链接；披露含：①与被评方关系 ②利益隔离机制 ③涉及 zhaoxinghua/stevenzhao 字样文件清单 |
