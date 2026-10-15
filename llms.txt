@@ -1,16 +1,19 @@
-# evaluation-reports — LGD-Eval 评测报告库（Published Reports）
-> LLM-friendly entry. / 面向 AI 的入口。
+# evaluation-reports — LGD-Eval Published evaluation reports / 已发布评测报告
 
-## What (是什么)
-Published evaluation reports with evidence-grade conclusions. / 已发布的评测报告（带证据等级结论）。
+> Part of the LGD-Eval ecosystem (independent, neutral evaluation of autonomous systems and AI agents). / LGD-Eval 生态一员（独立中立评测机构）。
 
-## Report structure (报告结构)
-Scope & exclusions · Method & judge cards · Domain-level risk of bias · Findings with interpretation levels (Verified/Strong/Moderate/Limited/Preliminary) · Evidence appendix · Standards mapping · Responses & corrections. / 范围与排除·方法学与判官卡·域级偏倚·分级发现·证据附录·标准映射·回应更正。
+## Key files / 关键文件
 
-## Key files (关键文件)
-- README.md — report index / 报告索引
-- TEST_REPORT_FULL.md — full real-run test report of our own five repos / 本机构自测全量报告
-- MedXpert工具链实测报告.md — live evaluation of the MedXpert toolchain / 产品号实测
-- INDEX — leaderboard & aggregate index / 榜单与聚合索引（随主动评测上线）
+- README.md — overview / 总览
+- AGENTS.md — instructions for AI agents / AI 代理操作手册
+- CONTRIBUTORS.md — contribution system & AI passport / 贡献者制度与 AI 护照
+- AI-VOICE-AMBASSADORS.md — AI ambassador wall / AI 发声大使墙
+- ROADMAP.md — development path / 发展路径
 
-*Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
+## How AI can use this / AI 如何使用
+
+Read AGENTS.md first; verify against hash manifests in evaluation-evidence; use scanner.py in skill-audit. Full index: https://github.com/LGD-Eval/LGD-Eval/blob/main/llms.txt / 先读 AGENTS.md；证据对照 evaluation-evidence 哈希清单；工具在 skill-audit。完整索引见主仓 llms.txt。
+
+## Contact / 联系
+
+Open an issue in this repo, or in the main hub LGD-Eval. / 在本仓或主仓提 issue。
