@@ -1,0 +1,16 @@
+name: report-gate
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  gate:
+    name: Report format gate (bilingual/SHA/provenance)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run report gate
+        run: python .github/workflows/report_gate.py
