@@ -7,6 +7,7 @@
 |---|---|---|---|---|---|---|
 | 001 | anthropics/skills | Skill library / 官方技能库 | CLEAN (0 real risk) / 干净 | 2026-10-15 | [REPORT-001](proactive/REPORT-001-supply-chain-healthcheck.md) | CLOSED |
 | 001 | VoltAgent/awesome-openclaw-skills | Skill directory / 社区技能目录 | CLEAN (0 real risk) / 干净 | 2026-10-15 | [REPORT-001](proactive/REPORT-001-supply-chain-healthcheck.md) | CLOSED |
+| 002 | MCP spec 2024-11→2026-07（25 版次矩阵） | Tech alignment / 技术对齐窗口（G-13） | stateless 迁移为硬窗口；我方资产高兼容需补 server/discover | 2026-10-19 | [REPORT-002](proactive/REPORT-002-mcp-version-compat-matrix.md) | CLOSED |
 
 ## Queue / 待评队列
 Per PROACTIVE_EVALUATION.md / 按主动评测制度：DeepEval, Promptfoo, LLM Guard, Garak, ai-injection-guard, llm-trust-guard
