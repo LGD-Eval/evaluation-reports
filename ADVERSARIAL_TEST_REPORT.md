@@ -104,3 +104,11 @@
 ---
 
 *Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
+---
+
+## Rerun Quadruple / 复跑四元组（G-17 · MLCommons 复跑要求）
+
+> **Subject commit SHA / 被评提交**：`LGD-Eval/skill-audit@406902c8c92f`（main，评测日快照 2026-10-14T22:44:37Z；`scanner.py` v0.1.0-mvp）
+> **Tool version / 工具版本**：`scanner.py` v0.1.0-mvp（skill-audit）；CPython 3.x（stdlib only）
+> **Evaluation date / 评测日期**：2026-10-14
+> **Rerun command / 复跑命令**：`python scanner.py --self-test` + 对报告第 1 节 9 样本对抗集（poison_obvious / poison_exfil / poison_manip / 大小写绕过 / 空格绕过 / Unicode 同形字 / 乱码 / 伪声明 / 干净对照）逐样本执行 `python scanner.py --target <sample>`，预期 P0/P2 命中与对照全符合

@@ -48,3 +48,11 @@
 ---
 
 *Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
+---
+
+## Rerun Quadruple / 复跑四元组（G-17 · MLCommons 复跑要求）
+
+> **Subject commit SHA / 被评提交**：LGD-Eval 5 仓，锚点 `evaluation-reports@f9b90ce0d103`（2026-10-15 快照）
+> **Tool version / 工具版本**：GitHub REST API（community profile / contents / license SPDX）
+> **Evaluation date / 评测日期**：2026-10-15
+> **Rerun command / 复跑命令**：`gh api repos/LGD-Eval/<5仓>/community/profile` 核对 5 仓 profile 100%；逐仓核对 README/AGENTS/CONTRIBUTORS/CONTRIBUTING/CODE_OF_CONDUCT/LICENSE/SECURITY/FUNDING/GOVERNANCE/ROUTING/ROADMAP/PROMPTING/HALL_OF_FAME/ECOSYSTEM_REFERRAL/PROACTIVE_EVALUATION/BENCHMARK_RESEARCH/LAUNCH_PLAN/AI-VOICE-AMBASSADORS 在位 + license SPDX 可识别

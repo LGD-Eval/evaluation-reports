@@ -101,3 +101,11 @@
 ---
 
 *Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
+---
+
+## Rerun Quadruple / 复跑四元组（G-17 · MLCommons 复跑要求）
+
+> **Subject commit SHA / 被评提交**：LGD-Eval 5 仓，锚点 `evaluation-reports@c16be671dbb7`（评测日快照 2026-10-14T16:06:08Z）；其余 4 仓（LGD-Eval / evaluation-protocol / evaluation-evidence / skill-audit）同期 main 快照
+> **Tool version / 工具版本**：GitHub REST API（GET trees/contents/license）+ CPython 3.x stdlib（`_treeAll` / `_aiEntry` / `_linkCheck` / `_linkRecheck` / `_deepCheck` / `_postFix` 探针脚本）
+> **Evaluation date / 评测日期**：2026-10-14
+> **Rerun command / 复跑命令**：GitHub API 全量拉取 5 仓文件树 → 读回 PROMPTING/AGENTS/ROUTING/ROADMAP/CONTRIBUTING/copilot-instructions 全文 → 首页 7 关键外链 HEAD/GET 复测（7/7=200）→ license 字段 SPDX 识别（5/5）→ Projects GraphQL 读回（3/3 public）

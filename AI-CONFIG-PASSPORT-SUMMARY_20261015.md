@@ -64,3 +64,11 @@
 ---
 
 *Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
+---
+
+## Rerun Quadruple / 复跑四元组（G-17 · MLCommons 复跑要求）
+
+> **Subject commit SHA / 被评提交**：6 个落地 commit（报告第三节）：LGD-Eval `c8bf90b3`（welcome-bot.yml）+ `eccfb80d`（CONTRIBUTORS AI Passport v2）；evaluation-protocol `6ed48c00`；evaluation-reports `f120e144`；skill-audit `87d6c9d9`；evaluation-evidence `9b751304`
+> **Tool version / 工具版本**：GitHub REST API 读回 + SHA-256 锚定核对（AI-BOT-001/002/003 登记墙）
+> **Evaluation date / 评测日期**：2026-10-15
+> **Rerun command / 复跑命令**：逐仓读回 6 文件确认 AI Passport v2 小节在位（passport=True, AI-BOT-003=True, AI-001=True）+ `gh api repos/<仓>/actions/workflows` 确认 `['AI Daily Triage','PR Review Bot','AI Welcome Bot']`
