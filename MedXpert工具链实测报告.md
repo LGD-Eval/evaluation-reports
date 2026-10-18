@@ -1,8 +1,12 @@
 # MedXpert 医疗产品线工具链实测报告
+# MedXpert Medical Toolkit Live Test Report
 
-> 实测对象：GitHub 账号 `stevenzhao07`（25 仓，其中 21 个自有工具 + 3 个 fork + 1 个 profile）
-> 实测时间：2026-10-14 ｜ 实测环境：本机 Python 3.12.10（零依赖标准库运行）
-> 实测方法：真实拉取全部仓库 README 与路由文件 → 本机实跑 router.py / discover.py / 4 个代表性工具 → 10 个业务场景路由命中测试
+> **Evaluation body / 评测方**: LGD-Eval evaluation line · independent third party（Evidence-Gated AI Lifecycle Governance）
+> **Subject / 被评测方**: GitHub 账号 `stevenzhao07`（25 仓，其中 21 个自有工具 + 3 个 fork + 1 个 profile）；锚点仓 `medical-ai-toolkit@8bcb152cd0b3`
+> **Evaluation time / 评测时间**: 2026-10-14（+08:00）
+> **Environment fingerprint / 评测环境指纹**: 本机 Python 3.12.10（零依赖标准库运行）
+> **Method / 实测方法**: 真实拉取全部仓库 README 与路由文件 → 本机实跑 router.py / discover.py / 4 个代表性工具 → 10 个业务场景路由命中测试
+> English: this report evaluates the `stevenzhao07` GitHub account (25 repos: 21 own tool modules + 3 forks + 1 profile) for runnability, discoverability and AI-loadability of the MedXpert toolchain (2026-10-14).
 
 ---
 
@@ -242,3 +246,11 @@ git clone https://github.com/stevenzhao07/ai-a3-laws.git && python scripts/a3_la
 | 质量一致性 | 2/5 | 文档口径漂移 + selftest 声明与实际有缝 |
 
 **总评**：原型级（接近 MVP），理念领先（可证伪/护照/追溯，契合未来高自主 AI 治理），工程化与内容可信度是下一阶段重点。补齐路线：①运行时审计与身份集成 ②专家评审/官方源核验 ③部署形态与 SLA ④质量一致性修复（含 multilingual-ifu）。
+---
+
+## Rerun Quadruple / 复跑四元组（G-17 · MLCommons 复跑要求）
+
+> **Subject commit SHA / 被评提交**：`stevenzhao07/medical-ai-toolkit@8bcb152cd0b3`（门户仓，评测日快照 2026-10-14T06:08:56Z；覆盖账号级 25 仓 README/路由快照）
+> **Tool version / 工具版本**：CPython 3.12.10（stdlib only）；`router.py` / `discover.py` + 4 个代表性工具（pms-vigilance / udi-assignment / ml-validation / ai-a3-laws）内置 selftest
+> **Evaluation date / 评测日期**：2026-10-14
+> **Rerun command / 复跑命令**：`git clone https://github.com/stevenzhao07/medical-ai-toolkit && cd medical-ai-toolkit && python router.py && python discover.py`，随后按报告第四节清单对 4 个代表性工具执行 `python <script>.py --selftest`（应全部 exit 0）

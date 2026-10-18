@@ -53,3 +53,11 @@
 （2）维护者决策项（依赖升级合并）。两者均有明确负责人与触发条件，不再存在"从未执行"的自动化。
 
 *Evaluating Autonomy. Verifying Governance. / 评测自治之物，验证治理主张。*
+---
+
+## Rerun Quadruple / 复跑四元组（G-17 · MLCommons 复跑要求）
+
+> **Subject commit SHA / 被评提交**：LGD-Eval 5 仓 workflow 配置，锚点 `evaluation-reports@f9b90ce0d103`（2026-10-15T06:52:06Z 快照；pr-review / welcome-bot 各仓含 workflow_dispatch + self-test）
+> **Tool version / 工具版本**：GitHub Actions（workflow_dispatch 手动触发）；`pr-audit.py --self-test`（5 组断言）；`welcome-self-test.py --self-test`（关键路由文件 + 欢迎模板双语锚点 + 登录名插值）
+> **Evaluation date / 评测日期**：2026-10-15
+> **Rerun command / 复跑命令**：5 仓各执行 `gh workflow run pr-review.yml --ref main` 与 `gh workflow run welcome-bot.yml --ref main`，观察 self-test job 全部 success；再逐仓核对 Actions runs 非 skipped
