@@ -1,7 +1,7 @@
 # MedXpert 医疗产品线工具链实测报告
 # MedXpert Medical Toolkit Live Test Report
 
-> **Evaluation body / 评测方**: LGD-Eval evaluation line · independent third party（Evidence-Gated AI Lifecycle Governance）
+> **Evaluation body / 评测方**: LGD-Eval evaluation line · independent third party（Lifecycle Governance Doctrine）
 > **Subject / 被评测方**: GitHub 账号 `stevenzhao07`（25 仓，其中 21 个自有工具 + 3 个 fork + 1 个 profile）；锚点仓 `medical-ai-toolkit@8bcb152cd0b3`
 > **Evaluation time / 评测时间**: 2026-10-14（+08:00）
 > **Environment fingerprint / 评测环境指纹**: 本机 Python 3.12.10（零依赖标准库运行）
