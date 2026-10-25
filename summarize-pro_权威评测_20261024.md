@@ -5,6 +5,7 @@
 > **Author / 作者**: 注册老炮@MedXpert I SynomosAI（未申请实体注册、未申请商标注册，仅作来源标识）
 > **Evaluation time / 评测时间**: 2026-10-24（+08:00）
 > **Method / 方法**: skillhub.cn 官方只读 API（零凭据、零写操作）+ GitHub 镜像核验 + 页面声明交叉比对
+> **Environment fingerprint / 环境指纹**: report commit `0de860e13b` (evaluation-reports @ main); corpus: SkillHub official read-only API (2026-10-24, zero-credential) + GitHub mirror cross-check; reviewer toolchain: skill-audit scanner v0.3.0 (40 rules / 100 patterns, OWASP LLM Top10 2025 + Agentic AI 2026 mapping); environment: Windows Python 3, UTC+08:00
 > **Report No / 报告编号**: LGD-EVAL-2026-001
 > **Result / 结论**: **VERIFIED · PASS（金标）** — 综合 **4.75 / 5.0**（平台 TRACE 评测，2026-10-10；本报告独立复核一致）
 
