@@ -27,7 +27,7 @@ with disambiguation notes and verbatim numbers — is sound governance practice.
 
 Three material issues were found, one of them **P0 (correctness of public claim)**:
 (1) **Security declaration contradiction**: the SkillHub page states "Security: no
-independent scan (TBD)", yet two lab scans already exist and are benign; (2) **version
+independent scan (pending)", yet two lab scans already exist and are benign; (2) **version
 drift**: the GitHub mirror ships v1.0.0 (4 files, no format-family / fidelity chapters)
 while SkillHub serves v1.0.1 with the full methodology — an AI pulling from GitHub gets
 an outdated package; (3) **missing examples**: no worked input→output sample and no
@@ -45,7 +45,7 @@ A 4.85 / C 4.80 / E 4.72 / R 4.37）。安全：腾讯科恩、云鼎两实验�
 数字逐字保留）——是良好的治理实践。
 
 评测发现 3 个实质问题，其中 **1 项 P0（公开声明正确性）**：① **安全声明矛盾**：
-页面写"未做独立安全扫描（TBD）"，但两实验室扫描早已完成且均为良性；② **版本漂移**：
+页面写"未做独立安全扫描（待定）"，但两实验室扫描早已完成且均为良性；② **版本漂移**：
 GitHub 镜像仅 v1.0.0（4 文件、无格式族/忠实性章节），SkillHub 上架 v1.0.1 完整方法论版
 ——AI 从 GitHub 拉取将得到过期包；③ **缺少示例**：无"输入→输出"实际样例、无输入
 规模约束，输出可复现性弱。全部发现均有 API 证据支撑、可执行（R-001…R-006，见 §9）。
@@ -99,7 +99,7 @@ GitHub 镜像仅 v1.0.0（4 文件、无格式族/忠实性章节），SkillHub 
 
 | # | Finding / 发现 | Evidence / 证据 |
 |---|---|---|
-| F-01 | **安全声明矛盾**：页面"证据与安全声明"区写"安全：未做独立安全扫描（TBD），结论待补；补全前不作推荐背书"，但 API `securityReports` 显示**科恩 + 云鼎双实验室"安全，无风险"（benign，10-17 扫描）**，报告链接均已生成 | `detail.json` securityReports.keen/sanbu；页面正文 §"证据与安全声明" |
+| F-01 | **安全声明矛盾**：页面"证据与安全声明"区写"安全：未做独立安全扫描（待定），结论待补；补全前不作推荐背书"，但 API `securityReports` 显示**科恩 + 云鼎双实验室"安全，无风险"（benign，10-17 扫描）**，报告链接均已生成 | `detail.json` securityReports.keen/sanbu；页面正文 §"证据与安全声明" |
 | F-02 | **证据声明空缺**：页面写"证据：TBD（暂无评测/徽章链接）"——**本报告即为其补位**；应回填 LGD-Eval 评测报告链接 + 徽章 | 页面正文；本报告（LGD-EVAL-2026-001） |
 
 ### P1 — 对外一致性 / 可发现性（1 个发布周期，≤1 月）
@@ -152,7 +152,7 @@ GitHub 镜像仅 v1.0.0（4 文件、无格式族/忠实性章节），SkillHub 
 
 | R# | 优先级 | 发现 | 证据 | 建议 | 预期收益 | 验收标准 |
 |---|---|---|---|---|---|---|
-| R-001 | **P0** | 页面"安全：未做独立安全扫描（TBD）"与双实验室良性扫描矛盾 | F-01；`detail.json` securityReports | 将页面"证据与安全声明"区改写为："安全：科恩实验室 + 云鼎实验室双扫描『安全，无风险』（2026-10-17），报告链接附后"，删除 TBD 措辞 | 消除公开展示的自相矛盾，AI/用户不再误判"无安全背书" | 页面不再出现"未做独立安全扫描/TBD"；双实验室链接可达 |
+| R-001 | **P0** | 页面"安全：未做独立安全扫描（待定）"与双实验室良性扫描矛盾 | F-01；`detail.json` securityReports | 将页面"证据与安全声明"区改写为："安全：科恩实验室 + 云鼎实验室双扫描『安全，无风险』（2026-10-17），报告链接附后"，删除 TBD 措辞 | 消除公开展示的自相矛盾，AI/用户不再误判"无安全背书" | 页面不再出现"未做独立安全扫描/TBD"；双实验室链接可达 |
 | R-002 | **P0** | 页面"证据：TBD（暂无评测/徽章链接）" | F-02；页面正文 | 回填本评测报告链接（LGD-EVAL-2026-001）+ LGD VERIFIED 金标徽章链接 | 证据闭环：评测号权威背书直接可点；AI 冷启动可读到评测结论 | 页面证据区出现可点击的评测报告链接与徽章 |
 | R-003 | **P1** | GitHub 镜像落后两个版本：无 AGENTS.md/llms.txt/_meta.json、SKILL.md 为 v1.0.0 骨架 | F-03；`git ls-tree` | 将 SkillHub v1.0.1 完整包同步至 GitHub 镜像（含 AGENTS.md / llms.txt / 完整 SKILL.md），并升 version=1.0.1 | AI 从任一入口拉取均得到一致最新版；镜像与平台可互证 | GitHub main 含 AGENTS.md/llms.txt；SKILL.md 含格式族与忠实性章节 |
 | R-004 | **P1** | 无"输入→输出"实际样例、触发无对话示例 | F-04；TRACE docQuality 4.0 / trigger 4.3 | 在 SKILL.md 增加"Example"章节：一段会议记录→三行结论+三段式纪要的完整示例；补充 2 个触发对话示例 | docQuality/trigger 得分提升；新用户开箱可用 | SKILL.md 含 ≥1 个完整输入→输出示例与 ≥2 个对话触发示例 |
