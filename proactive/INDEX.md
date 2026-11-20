@@ -13,9 +13,10 @@
 | 005 | leondz/garak | LLM vulnerability scanner / 漏洞扫描器 | CLEAN (0 real risk) / 干净 | 2026-10-24 | [REPORT-005](proactive/REPORT-Garak-20261024.md) | CLOSED |
 | 006 | ai-injection-guard (LuciferForge/prompt-shield) | Prompt injection scanner / 注入扫描器 | CLEAN (0 real risk) / 干净 | 2026-10-25 | [REPORT-006](proactive/REPORT-ai-injection-guard-20261025.md) | CLOSED |
 | 007 | confident-ai/deepeval | LLM eval framework / 评测框架 | CLEAN (0 real risk) / 干净 | 2026-10-15 | [REPORT-007](proactive/REPORT-DeepEval-20261015.md) | CLOSED |
+| 008 | nkratk/llm-trust-guard | LLM trust/safety toolkit / 信任与安全工具 | CLEAN (0 real risk) / 干净 | 2026-11-20 | [REPORT-008](proactive/REPORT-008-llm-trust-guard.md) | OPEN |
 
 ## Queue / 待评队列
-Per PROACTIVE_EVALUATION.md / 按主动评测制度：llm-trust-guard（下一位，队列循环中 / next in rotation）
+Per PROACTIVE_EVALUATION.md / 按主动评测制度：008 已发布（llm-trust-guard，2026-11-20 OPEN）；下一位 promptfoo（2026-10-16 已发 003，待复核）/ next in rotation
 
 ## How to request an evaluation / 如何申请评测
 Open an issue in evaluation-protocol with target + permission / 在 evaluation-protocol 开 issue 并提供对象与授权。
